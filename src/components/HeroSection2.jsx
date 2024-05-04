@@ -2,7 +2,7 @@ import { FaArrowRightLong } from "react-icons/fa6";
 
 function HeroSection2() {
   return (
-    <div className="pb-8 bg-gray-100 w-full  flex items-center justify-center">
+    <div className="pb-16 bg-gray-100 w-full flex justify-center">
         <div className="bg-white h-[70vh] w-[150vh] rounded-lg shadow-xl flex flex-col items-center">
                 <div className="flex w-[70vh] h-16 mt-4">
                     <button className="w-36 py-2.5 px-5 mt-4 text-sm font-medium  rounded-s-xl border shadow-xl focus:z-10 focus:ring-4 focus:ring-gray-100 bg-black text-white border-gray-600  hover:bg-gray-700">Tab1</button>
