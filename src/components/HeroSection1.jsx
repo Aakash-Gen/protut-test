@@ -1,7 +1,7 @@
 import { FaArrowRightLong } from "react-icons/fa6";
 function HeroSection1() {
   return (
-    <div className="bg-gray-100 w-full min-h-screen pt-36">
+    <div className="bg-gray-100 w-full min-h-screen">
         <div>
             <div className="flex flex-col justify-center items-center">
                 <h1 className="text-black text-xl font-medium">Here's how it works</h1>
