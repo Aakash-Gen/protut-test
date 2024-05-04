@@ -14,7 +14,7 @@ function Navbar() {
         </div>
         <Link to="collection" spy={true} smooth={true} duration={500} offset={-70} className='hover:cursor-pointer text-white' >Home</Link>
         <Link to="compare" spy={true} smooth={true} duration={500} offset={-70} className='hover:cursor-pointer text-white'>About</Link>
-        <div className="relative">
+        <div className="relative flex flex-col items-center">
             <div className="text-white hover:cursor-pointer" onClick={HandleDropdown}>
                 Products
             </div>
@@ -29,7 +29,7 @@ function Navbar() {
 
 const Dropdown =()=>{
     return(
-        <div className="absolute top-full bg-white border rounded shadow-md mt-6 w-36 p-4 gap-2">
+        <div className="absolute top-full bg-white border rounded shadow-md mt-6 w-44 p-4 flex flex-col items-center">
             <DropdownList title="Product 1" descriptiion="Description"/>
             <DropdownList title="Product 2" descriptiion="Description"/>
             <DropdownList title="Product 3" descriptiion="Description"/>
@@ -41,7 +41,7 @@ const DropdownList =(props)=>{
     return(
         <div>
             <p className="text-md font-medium text-gray-800">{props.title}</p>
-            <p className="text-sm font-medium text-gray-400 mb-2">{props.descriptiion} </p>
+            <p className="text-xs font-medium text-gray-400 mb-3">{props.descriptiion} </p>
         </div>
     )
 }
