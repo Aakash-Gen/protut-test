@@ -1,22 +1,7 @@
-import {useRef, useState} from "react";
+import useVideoPlayer from "./useVideoPlayer";
 import { FaArrowRightLong } from "react-icons/fa6";
 function HeroSection1() {
-    const [playing, setPlaying] = useState(1);
-    const videoRef = useRef(null);
-    const handlePlay = (step) => {
-        setPlaying(step);
-    }
-    const videos =[
-        "/step1.mp4",
-        "/step2.mp4",
-        "/step3.mp4",
-        "/step4.mp4"
-    ]
-    const handleAutomaticPlay = () => {
-        if(playing<videos.length){
-            setPlaying(playing+1);
-        }
-    }
+    const { playing, handlePlay, handleAutomaticPlay, videoRef, videos } = useVideoPlayer();
   return (
     <div id="home" className="bg-gray-100 w-full min-h-screen">
         <div>
