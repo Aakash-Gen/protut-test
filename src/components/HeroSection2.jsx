@@ -1,6 +1,6 @@
 import { FaArrowRightLong } from "react-icons/fa6";
 import useVideoPlayer from "./useVideoPlayer";
-import { useState } from "react";
+import { useState,useEffect } from "react";
 
 function HeroSection2() {
     const { playing, handlePlay, handleAutomaticPlay, videoRef, videos } = useVideoPlayer();
@@ -8,6 +8,10 @@ function HeroSection2() {
     const handleActiveTab = (tab) => {
         setActiveTab(tab);
     }
+    useEffect(() => {
+        setActiveTab(playing);
+    }, [playing]);
+
   return (
     <div className="pb-16 bg-gray-100 w-full flex justify-center">
         <div className="md:bg-white h-[70vh] md:w-[150vh] sm:w-[50vh] rounded-lg shadow-xl flex flex-col items-center">
