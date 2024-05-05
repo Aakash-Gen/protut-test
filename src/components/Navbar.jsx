@@ -10,12 +10,12 @@ function Navbar() {
     }
   return (
     <div className=' bg-black flex justify-between items-center p-4 fixed top-0 w-full h-14 z-10 pl-6'>
-        <div className="flex items-center gap-1">
+        <Link to="dashboard" spy={true} smooth={true} duration={500} offset={-70} className="flex items-center gap-1 hover:cursor-pointer">
             <h1 className="text-white font-bold text-lg ">Protut</h1>
             <DiProlog size={28} color="white"/>
-        </div>
-        <Link to="collection" spy={true} smooth={true} duration={500} offset={-70} className='hover:cursor-pointer text-white' >Home</Link>
-        <Link to="compare" spy={true} smooth={true} duration={500} offset={-70} className='hover:cursor-pointer text-white'>About</Link>
+        </Link>
+        <Link to="home" spy={true} smooth={true} duration={500} offset={-70} className='hover:cursor-pointer text-white' >Home</Link>
+        <Link to="footer" spy={true} smooth={true} duration={500} offset={-70} className='hover:cursor-pointer text-white'>About</Link>
         <div className="relative flex flex-col items-center">
             <div className="text-white hover:cursor-pointer" onClick={HandleDropdown}>
                 Products

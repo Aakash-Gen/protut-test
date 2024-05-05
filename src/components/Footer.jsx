@@ -2,7 +2,7 @@ import { DiProlog } from "react-icons/di";
 
 function Footer() {
   return (
-    <div className="bg-gray-300 grid  md:grid-cols-2 lg:grid-cols-11 p-10 lg:p-20 gap-10">
+    <div id="footer" className="bg-gray-300 grid  md:grid-cols-2 lg:grid-cols-11 p-10 lg:p-20 gap-10">
         <div className="flex flex-col text-black gap-6 text-md lg:col-span-3">
             <div className="text-3xl font-black flex gap-2 items-center">
               Protut

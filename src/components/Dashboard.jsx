@@ -2,7 +2,7 @@ import { FaArrowRightLong } from "react-icons/fa6";
 
 function Dashboard() {
   return (
-    <div className="bg-gray-100 flex min-h-screen justify-evenly items-center pt-12">
+    <div id="dashboard" className="bg-gray-100 flex min-h-screen justify-evenly items-center pt-12">
         <div>
             <h1 className="text-black text-4xl font-bold">Welcome to Protut</h1>
             <p className="text-black text-lg">Protut is a one-stop platform to search and buy best products in the market.</p>
