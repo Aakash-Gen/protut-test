@@ -45,7 +45,6 @@ function Navbar() {
             <AiOutlineClose color="black" size={28} className="hover:cursor-pointer" onClick={() => setToggleMenu(false)}/>
             <Link to="home" spy={true} smooth={true} duration={500} offset={-70}  onClick={()=> setToggleMenu(false)} className='hover:cursor-pointer justify-center  mt-2 py-1.5 px-4 w-full text-md font-medium' >Home</Link>
             <Link to="footer" spy={true} smooth={true} duration={500} offset={-70}  onClick={()=> setToggleMenu(false)} className='hover:cursor-pointer justify-center  mt-2 py-1.5 px-4 w-full text-md font-medium'>About</Link>
-            <Link to="about-us" spy={true} smooth={true} duration={500} offset={-70}  onClick={()=> setToggleMenu(false)} className='hover:cursor-pointer justify-center mt-2 py-1.5 px-4 w-full text-md font-medium'>About Us</Link>
             <button className="w-24 py-1.5 px-5 text-md flex items-center gap-2 justify-center font-medium shadow-xl rounded-lg bg-blue-600 text-white hover:bg-blue-900">
                 Login
             </button>
