@@ -3,7 +3,7 @@ import { FaArrowRightLong } from "react-icons/fa6";
 function HeroSection1() {
     const { playing, handlePlay, handleAutomaticPlay, videoRef, videos } = useVideoPlayer();
   return (
-    <div id="home" className="bg-gray-100 w-full min-h-screen">
+    <div id="home" className="bg-gray-100 w-full md:min-h-screen sm:h-[90vh]">
         <div>
             <div className="flex flex-col justify-center items-center">
                 <h1 className="text-black text-xl font-medium">Here's how it works</h1>
@@ -12,15 +12,15 @@ function HeroSection1() {
                     <FaArrowRightLong color="gray-700"/>
                 </div>
             </div>
-            <div className="grid grid-cols-4 mt-12 h-[50vh]">
-                <div className="flex flex-col col-span-1 justify-evenly items-center">
+            <div className="grid md:grid-cols-4  mt-12 h-[50vh]">
+                <div className="flex md:flex-col md:col-span-1 justify-evenly items-center sm:flex-row pb-2">
                     <Button step="Step 1:" text="lorem ipsum" onClick={()=>handlePlay(1)} />
                     <Button step="Step 2:" text="lorem ipsum" onClick={()=>handlePlay(2)}/>
                 </div>
-                <div className="flex col-span-2 rounded-lg">
+                <div className="flex md:col-span-2 rounded-lg sm:my-2">
                     <video className="rounded-xl shadow-lg" autoPlay controls src={videos[playing-1]} ref={videoRef} onEnded={handleAutomaticPlay}></video>
                 </div>
-                <div className="flex flex-col col-span-1 justify-evenly items-center">
+                <div className="flex md:flex-col md:col-span-1 sm:flex-row justify-evenly items-center">
                     <Button step="Step 3:" text="lorem ipsum" onClick={()=>handlePlay(3)} />
                     <Button step="Step 4:" text="lorem ipsum" onClick={()=>handlePlay(4)} />
                 </div>
