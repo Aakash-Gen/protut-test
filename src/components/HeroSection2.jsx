@@ -16,7 +16,7 @@ function HeroSection2() {
                         <button
                             key={index}
                             onClick={() => {handlePlay(index); handleActiveTab(index)}}
-                            className={`w-36 py-2.5 px-5 mt-4 text-sm font-medium border focus:z-10 shadow-xl focus:ring-4 focus:ring-gray-100 bg-black text-white border-gray-600 hover:bg-gray-700  rounded-${index === 1 ? 's' : index === 4 ? 'e' : ''}-xl ${activeTab === index ? 'bg-gray-700' : ''}`}
+                            className={`w-36 py-2.5 px-5 mt-4 text-sm font-medium border focus:z-10 shadow-xl focus:ring-4 focus:ring-gray-100 bg-black text-white border-gray-600 hover:bg-gray-700  ${index === 1 ? 'rounded-s-xl' : index === 4 ? 'rounded-e-xl' : ''} ${activeTab === index ? 'bg-gray-700' : ''}`}
                         >
                             Tab{index}
                         </button>

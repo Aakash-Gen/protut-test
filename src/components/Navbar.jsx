@@ -22,9 +22,14 @@ function Navbar() {
             </div>
             {dropdown && <Dropdown/>}
         </div>
-        <button className="w-24 py-1.5 px-6 text-md flex items-center gap-2 justify-center font-medium shadow-xl rounded-lg bg-blue-600 text-white hover:bg-blue-900">
-            Signup
-        </button>
+        <div className="flex gap-1">
+            <button className="w-24 py-1.5 px-5 text-md flex items-center gap-2 justify-center font-medium shadow-xl rounded-lg bg-blue-600 text-white hover:bg-blue-900">
+                Login
+            </button>
+            <button className="w-24 py-1.5 px-5 text-md flex items-center gap-2 justify-center font-medium shadow-xl rounded-lg bg-blue-600 text-white hover:bg-blue-900">
+                Signup
+            </button>
+        </div>
     </div>
   )
 }
