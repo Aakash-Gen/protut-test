@@ -19,6 +19,11 @@ function useVideoPlayer() {
     }
     useEffect(() => {
         const video = videoRef.current;
+        if (!video) {
+            console.error("Video element is not available.");
+            return;
+        }
+
         const options = {
             root: null,
             rootMargin: "0px",
